@@ -1,4 +1,4 @@
-<div class="hero-area" style="background-image: linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(<?php echo get_template_directory_uri()?>/images/hero-bg1.jpg)">
+<div class="hero-area" style="background-image: linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(<?php echo get_template_directory_uri()?>/assets/images/hero-bg1.jpg)">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
