@@ -26,3 +26,57 @@ nav.nav-menu ul li a {
     padding: 10px 0px;
     font-size: 34px;
 }
+
+/* Hero area style  */
+.hero-area {
+    padding: 150px 0px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-area h2 {
+    text-align: center;
+    font-size: 38px;
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.hero-area p {
+    font-size: 18px;
+    color: #fff;
+    line-height: 32px;
+}
+
+.hero-area .hero-button-area {
+    text-align: center;
+    margin: 40px;
+}
+
+a.btn {
+    background: #222;
+    border-radius: 0;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hero-area .hero-button-area a.btn-left {
+    margin-right: 10px;
+    background: #e74c3c;
+    transition: 0.3s;
+}
+.hero-area .hero-button-area a.btn-left:hover {
+    background: #c0392b;
+}
+
+.hero-area .hero-button-area a.btn-right {
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+.hero-area .hero-button-area a.btn-right:hover {
+    background: none;
+    border: 1px solid #e74c3c;
+}
