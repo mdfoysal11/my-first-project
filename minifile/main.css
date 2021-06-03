@@ -80,3 +80,31 @@ a.btn {
     background: none;
     border: 1px solid #e74c3c;
 }
+header.header-wrapper {
+    background: #222;
+}
+
+nav.nav-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav.nav-menu ul li {
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+nav.nav-menu ul li a {
+    color: #fff;
+    font-size: 18px;
+    display: block;
+    text-decoration: none;
+}
+
+.logo-area h2 a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 0px;
+    font-size: 34px;
+}
