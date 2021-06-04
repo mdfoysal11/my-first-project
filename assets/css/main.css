@@ -80,6 +80,11 @@ a.btn {
     background: none;
     border: 1px solid #e74c3c;
 }
+
+.hero-button-area a i {
+    padding-right: 10px;
+    font-size: 20px;
+}
 header.header-wrapper {
     background: #222;
 }
