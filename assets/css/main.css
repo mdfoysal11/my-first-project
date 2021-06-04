@@ -20,11 +20,11 @@ nav.nav-menu ul li a {
     text-decoration: none;
 }
 
-.logo-area h2 a {
+.header-wrapper .logo-area h2 a {
     text-decoration: none;
     color: #fff;
-    padding: 10px 0px;
-    font-size: 34px;
+    font-size: 42px;
+    text-transform: uppercase;
 }
 
 /* Hero area style  */
@@ -86,25 +86,27 @@ a.btn {
     font-size: 20px;
 }
 header.header-wrapper {
-    background: #222;
+    background: #e74c3c;
 }
 
 nav.nav-menu ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    text-align: right;
 }
 
 nav.nav-menu ul li {
     display: inline-block;
-    padding: 10px 15px;
+    padding: 15px 5px;
 }
 
 nav.nav-menu ul li a {
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
     display: block;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .logo-area h2 a {
