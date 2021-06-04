@@ -9,6 +9,8 @@ function wpproject_bootstraping()
 {
 	load_theme_textdomain("wpproject");
 	add_theme_support( "title-tag");
+    register_nav_menu( "topmenu", __("Top Menu", "wpproject") );
+    register_nav_menu( "footermenu", __("Footer Menu", "wpproject") );
 }
 add_action( "after_setup_theme", "wpproject_bootstraping");
 
