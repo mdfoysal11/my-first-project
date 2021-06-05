@@ -108,6 +108,45 @@ a.btn {
 header.header-wrapper {
     background: #e74c3c;
 }
+/* Blog Post style  */
+.post-wraper {
+    padding: 40px 0px;
+}
+
+.post-wraper .posts {
+    border: 1px solid #ddd;
+}
+
+.post-wraper .posts .post-content {
+    padding: 10px;
+}
+
+.post-wraper .posts .post-content .post-title {
+    font-size: 20px;
+}
+
+.post-wraper .posts .post-content .post-title a {
+    text-decoration: none;
+    color: #222;
+    font-size: 20px;
+    font-family: 'Lato';
+}
+
+.post-wraper .posts .post-content .post-meta p {
+    font-size: 14px;
+    color: #555;
+}
+
+.post-wraper .posts .post-content p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.post-wraper .posts .post-content .post-title a:hover {
+    color: #999;
+}
+
 /* footer part */
 
 footer.footer-wraper {
