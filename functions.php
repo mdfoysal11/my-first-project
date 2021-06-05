@@ -15,6 +15,7 @@ function wpproject_bootstraping()
 add_action( "after_setup_theme", "wpproject_bootstraping");
 
 function wpproject_assets() {
+    wp_enqueue_style( "google-fonts", "//fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Lobster&display=swap");
     wp_enqueue_style( "fontawesome", "//use.fontawesome.com/releases/v5.15.3/css/all.css");
     wp_enqueue_style( "bootstrap", get_theme_file_uri( "/assets/css/bootstrap.min.css" ), null,VERSION);
     wp_enqueue_style( "main-css", get_theme_file_uri( "/assets/css/main.css" ), null, VERSION);
