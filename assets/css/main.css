@@ -104,6 +104,66 @@ header.header-wrapper {
 }
 /* footer part */
 
-.contairne{
-    background:black;
+footer.footer-wraper {
+    padding: 20px 0px;
+    background: #222;
+}
+
+footer.footer-wraper .footer-inner h4 {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+footer.footer-wraper .footer-inner ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+footer.footer-wraper .footer-inner ul li {
+    padding: 3px 0px;
+    border-bottom: 1px solid #444;
+}
+
+footer.footer-wraper .footer-inner ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+footer.footer-wraper .footer-inner ul li a:hover {
+    color: #e74c3c;
+}
+
+footer.footer-wraper .footer-inner ul li:last-child {
+    border-bottom: 0px solid #444;
+}
+
+footer.footer-wraper .footer-inner p {
+    color: #fff;
+    padding-top: 3px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+footer.footer-wraper .footer-inner .social-icon a {
+    color: #fff;
+    font-size: 24px;
+    padding-right: 10px;
+}
+
+footer.footer-wraper .footer-inner .social-icon a:last-child {
+    padding-right: 0px;
+}
+
+footer.footer-wraper .footer-inner .social-icon a i:hover {
+    color: #e74c3c;
+}
+
+footer.footer-wraper .footer-inner .social-icon a i {
+    transition: 0.3s;
 }
