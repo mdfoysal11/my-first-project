@@ -1,3 +1,8 @@
+body{
+    font-family: 'Lato', sans-serif;
+    /* font-family: 'Lobster', cursive; */
+}
+
 header.header-wrapper {
     background: #222;
 }
@@ -37,6 +42,7 @@ nav.nav-menu ul li a:hover {
 .header-wrapper .logo-area h2 a {
     text-decoration: none;
     color: #fff;
+    font-family: 'Lobster', cursive; ;
     font-size: 42px;
     text-transform: uppercase;
 }
