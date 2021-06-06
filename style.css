@@ -9,25 +9,3 @@ license: Public License v2 or later
 tags: blog,travel,potfolio,
 text domain: wpproject
 */
-
-/* jQuery Mobile Menu  */
-.slicknav_menu{display: none;}
-.slicknav_menu{background: rgba(0, 0, 0, 0) none repeat scroll 0 0;font-size: 15px;position: absolute;top: 0; right: 0;}
-.slicknav_nav{background: #e74c3c none repeat scroll 0 0;clear: both;font-size: 0.875em;position: fixed;left: 0; top: 0;width: 82%;z-index: 99999;}
-a.slicknav_btn {
-    width: 100%;
-    display: block;
-    padding: 10px;
-    border-radius: 0px;
-    font-size: 16px;
-    margin-top: -5px;
-    margin-right: -5px;
-    background: #e74c3c;
-}
-
-/* Mobile responsive  */
-@media only screen and (min-width: 200px) and (max-width: 700px){
-    .slicknav_menu{display: block;}
-    .header-inner{display: none;}
-    
-}

@@ -4,7 +4,7 @@ body{
 }
 
 header.header-wrapper {
-    background: #222;
+    background: #2c3e50;
 }
 
 nav.nav-menu ul {
@@ -25,13 +25,12 @@ nav.nav-menu ul li a {
     display: block;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 10px 15px;
+    padding: 5px 10px;
     transition: 0.3s;
 }
 
 nav.nav-menu ul li a:hover {
-    background: #c0392b;
-    border-radius: 3px;
+    background: #34495e;
 }
 
 .header-wrapper .logo-area h2 {
@@ -42,10 +41,16 @@ nav.nav-menu ul li a:hover {
 .header-wrapper .logo-area h2 a {
     text-decoration: none;
     color: #fff;
-    font-family: 'Lobster', cursive; ;
-    font-size: 42px;
+    font-family: 'Lato';
+    font-size: 38px;
     text-transform: uppercase;
+    display: block;
 }
+
+/* jQuery Mobile Menu  */
+.slicknav_menu{display: block;}
+.slicknav_menu { background: #2c3e50;position: fixed;top: 0;right: 0;z-index: 99999;width: 100%;}
+.slicknav_menu a.slicknav_btn {background: transparent;}
 
 /* Hero area style  */
 .hero-area {
@@ -74,7 +79,7 @@ nav.nav-menu ul li a:hover {
 }
 
 a.btn {
-    background: #222;
+    background: #2c3e50;
     border-radius: 0;
     padding: 10px 30px;
     color: #fff;
@@ -105,9 +110,7 @@ a.btn {
     padding-right: 10px;
     font-size: 20px;
 }
-header.header-wrapper {
-    background: #e74c3c;
-}
+
 /* Blog Post style  */
 .post-wraper {
     padding: 40px 0px;
@@ -151,14 +154,14 @@ header.header-wrapper {
 
 footer.footer-wraper {
     padding: 20px 0px;
-    background: #222;
+    background: #2c3e50;
 }
 
 footer.footer-wraper .footer-inner h4 {
-    font-size: 24px;
+    font-size: 22px;
     color: #fff;
     font-weight: 400;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 1.5px;
 }
 
@@ -169,8 +172,8 @@ footer.footer-wraper .footer-inner ul {
 }
 
 footer.footer-wraper .footer-inner ul li {
-    padding: 3px 0px;
-    border-bottom: 1px solid #444;
+    padding: 5px 0px;
+    border-bottom: 1px solid #34495e;
 }
 
 footer.footer-wraper .footer-inner ul li a {
@@ -211,4 +214,16 @@ footer.footer-wraper .footer-inner .social-icon a i:hover {
 
 footer.footer-wraper .footer-inner .social-icon a i {
     transition: 0.3s;
+}
+/* Mobile responsive view */
+@media only screen and (min-width: 200px) and (max-width: 700px){
+    .slicknav_menu{display: block;}
+    .header-inner{display: none;}
+    .hero-area {padding-top: 100px;padding-bottom: 50px;}
+    .hero-area h2 {font-size: 32px;}
+    .hero-area p{font-size: 15px;line-height: 26px;text-align: center;font-weight: 300;}
+    .hero-area .hero-button-area a.btn-left{margin: 0px; display: block; margin-bottom: 20px;}
+    .hero-area .hero-button-area a.btn-right{margin: 0px; display: block;}
+    .post-wraper .posts {margin-bottom: 20px;}
+    .post-wraper .posts:last-child {margin-bottom: 20px;}
 }
