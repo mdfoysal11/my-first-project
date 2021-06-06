@@ -9,6 +9,7 @@ function wpproject_bootstraping()
 {
 	load_theme_textdomain("wpproject");
 	add_theme_support( "title-tag");
+    add_theme_support( 'post-thumbnails' );
     register_nav_menu( "topmenu", __("Top Menu", "wpproject") );
     register_nav_menu( "footermenu", __("Footer Menu", "wpproject") );
 }
@@ -26,3 +27,8 @@ function wpproject_assets() {
     wp_enqueue_script("main-js", get_theme_file_uri("/assets/js/main.js"), array("jquery"), VERSION, true );
 }
 add_action("wp_enqueue_scripts","wpproject_assets");
+
+function wpproject_excerpt_length( $length ) {
+    return 25;
+}
+add_filter( 'excerpt_length', 'wpproject_excerpt_length', 999);

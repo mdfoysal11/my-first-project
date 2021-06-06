@@ -4,120 +4,38 @@
 
 <div class="post-wraper">
 <div class="container">
-        <div class="row mb-5">
-            <div class="col-md-3">
-                <div class="posts">
-                    <div class="post-img">
-                        <img class="img-fluid" src="<?php echo get_template_directory_uri();?>/assets/images/wpproject_post1.jpg" alt="Post iamge">
-                    </div>
-                    <div class="post-content">
-                        <h4 class="post-title"><a href="#">Dhaka is new look.</a></h4>
-                        <div class="post-meta">
-                            <p>Author: Foysal | Post At: 12th May, 2021</p>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste accusantium porro [...]</p>
-                    </div>
+<div class="row">
+<?php 
+    if(have_posts()){
+        while(have_posts()){
+            the_post();?>
+        <div class="col-md-4 mb-5">
+            <div class="posts">
+                <div class="post-img">
+                    <?php 
+                        if(has_post_thumbnail()){
+                            the_post_thumbnail( "large", array("class" => "img-fluid")); 
+                        }else{?>
+                            <img class="img-fluid" src="<?php echo get_template_directory_uri();?>/assets/images/wpproject_no_image.jpg" alt="">
+                        <?php    
+                        }
+                    ?>
                 </div>
-            </div>        
-            <div class="col-md-3">
-                <div class="posts">
-                    <div class="post-img">
-                        <img class="img-fluid" src="<?php echo get_template_directory_uri();?>/assets/images/wpproject_post2.jpg" alt="Post iamge">
+                <div class="post-content">
+                    <h4 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+                    <div class="post-meta">
+                        <p>Author: <?php echo get_the_author(); ?> | Post At: <?php echo get_the_date("jS M, Y"); ?></p>
                     </div>
-                    <div class="post-content">
-                       <h4 class="post-title"><a href="#">First post-COVID cruise.</a></h4>
-                        <div class="post-meta">
-                            <p>Author: Foysal | Post At: 12th May, 2021</p>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste accusantium porro [...]</p>
-                    </div>
-                </div>
-            </div>        
-            <div class="col-md-3">
-                <div class="posts">
-                    <div class="post-img">
-                        <img class="img-fluid" src="<?php echo get_template_directory_uri();?>/assets/images/wpproject_post1.jpg" alt="Post iamge">
-                    </div>
-                    <div class="post-content">
-                       <h4 class="post-title"><a href="#">Pandemic or not, proms.</a></h4>
-                        <div class="post-meta">
-                            <p>Author: Alamin | Post At: 12th May, 2021</p>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste accusantium porro [...]</p>
-                    </div>
-                </div>
-            </div>        
-            <div class="col-md-3">
-                <div class="posts">
-                    <div class="post-img">
-                        <img class="img-fluid" src="<?php echo get_template_directory_uri();?>/assets/images/wpproject_post2.jpg" alt="Post iamge">
-                    </div>
-                    <div class="post-content">
-                       <h4 class="post-title"><a href="#">Waterlogged Dhaka.</a></h4>
-                        <div class="post-meta">
-                            <p>Author: Foysal | Post At: 12th May, 2021</p>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste accusantium porro [...]</p>
-                    </div>
+                    <?php the_excerpt();?>
                 </div>
             </div>
-        </div>        <div class="row">
-            <div class="col-md-3">
-                <div class="posts">
-                    <div class="post-img">
-                        <img class="img-fluid" src="<?php echo get_template_directory_uri();?>/assets/images/wpproject_post1.jpg" alt="Post iamge">
-                    </div>
-                    <div class="post-content">
-                       <h4 class="post-title"><a href="#">Netanyahu: but not down</a></h4>
-                        <div class="post-meta">
-                            <p>Author: Foysal | Post At: 12th May, 2021</p>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste accusantium porro [...]</p>
-                    </div>
-                </div>
-            </div>        
-            <div class="col-md-3">
-                <div class="posts">
-                    <div class="post-img">
-                        <img class="img-fluid" src="<?php echo get_template_directory_uri();?>/assets/images/wpproject_post2.jpg" alt="Post iamge">
-                    </div>
-                    <div class="post-content">
-                       <h4 class="post-title"><a href="#">Bangabandhu Bridge raises</a></h4>
-                        <div class="post-meta">
-                            <p>Author: Foysal | Post At: 12th May, 2021</p>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste accusantium porro [...]</p>
-                    </div>
-                </div>
-            </div>        
-            <div class="col-md-3">
-                <div class="posts">
-                    <div class="post-img">
-                        <img class="img-fluid" src="<?php echo get_template_directory_uri();?>/assets/images/wpproject_post1.jpg" alt="Post iamge">
-                    </div>
-                    <div class="post-content">
-                       <h4 class="post-title"><a href="#">Again Lockdow 6th</a></h4>
-                        <div class="post-meta">
-                            <p>Author: Foysal | Post At: 12th May, 2021</p>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste accusantium porro [...]</p>
-                    </div>
-                </div>
-            </div>        
-            <div class="col-md-3">
-                <div class="posts">
-                    <div class="post-img">
-                        <img class="img-fluid" src="<?php echo get_template_directory_uri();?>/assets/images/wpproject_post2.jpg" alt="Post iamge">
-                    </div>
-                    <div class="post-content">
-                       <h4 class="post-title"><a href="#">Lock down stable.</a></h4>
-                        <div class="post-meta">
-                            <p>Author: Foysal | Post At: 12th May, 2021</p>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste accusantium porro [...]</p>
-                    </div>
-                </div>
-            </div>
+        </div> 
+        <?php
+        }
+    }else{
+        get_template_part( "theme-parts/common/no-post-msg");
+    }
+?>
         </div>
     </div>
 </div>
