@@ -48,7 +48,7 @@ nav.nav-menu ul li a:hover {
 }
 
 /* jQuery Mobile Menu  */
-.slicknav_menu{display: block;}
+.slicknav_menu{display: none;}
 .slicknav_menu { background: #2c3e50;position: fixed;top: 0;right: 0;z-index: 99999;width: 100%;}
 .slicknav_menu a.slicknav_btn {background: transparent;}
 
