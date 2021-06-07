@@ -133,7 +133,7 @@ a.btn {
 
 .post-wraper .posts .post-content .post-title a {
     text-decoration: none;
-    color: #222;
+    color: #2c3e50;
     font-size: 20px;
     font-family: 'Lato';
 }
@@ -144,13 +144,24 @@ a.btn {
 
 .post-wraper .posts .post-content .post-meta p {
     font-size: 14px;
-    color: #555;
+    color: #2c3e50;
 }
 
 .post-wraper .posts .post-content p {
     font-size: 16px;
     font-weight: 300;
     line-height: 24px;
+}
+
+a.read-more {
+    color: #e74c3c;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a.read-more:hover {
+    color: #2c3e50;
 }
 
 

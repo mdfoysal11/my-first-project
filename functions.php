@@ -32,3 +32,8 @@ function wpproject_excerpt_length( $length ) {
     return 25;
 }
 add_filter( 'excerpt_length', 'wpproject_excerpt_length', 999);
+
+function wpproject_excerpt_more( $more ) {
+    return '<a class="read-more" href="'.get_the_permalink().'" rel="nofollow"> More</a>';
+}
+add_filter( 'excerpt_more', 'wpproject_excerpt_more' );
