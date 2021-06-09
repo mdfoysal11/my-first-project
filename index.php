@@ -39,5 +39,5 @@
         </div>
     </div>
 </div>
-
+<?php get_template_part( "/theme-parts/common/theme-footer"); ?>
 <?php get_footer(  ) ?>
