@@ -17,7 +17,7 @@ add_action( "after_setup_theme", "wpproject_bootstraping");
 
 function wpproject_assets() {
     
-    if(is_page() || is_front_page()){
+    if(is_page() || is_front_page() || is_single( )){
         $template_name = basename(get_page_template());
         if($template_name == "launcher.php"){
             wp_enqueue_style( "launcher-google-fonts", "//fonts.googleapis.com/css?family=Open+Sans:400,700,800");

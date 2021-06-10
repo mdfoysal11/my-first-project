@@ -32,6 +32,9 @@ nav.nav-menu ul li a {
 nav.nav-menu ul li a:hover {
     background: #34495e;
 }
+nav.nav-menu ul li.current_page_item a {
+    background: #34495e;
+}
 
 .header-wrapper .logo-area h2 {
     margin-bottom: 0px;
