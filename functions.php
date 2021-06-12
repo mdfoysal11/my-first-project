@@ -32,6 +32,16 @@ function wpproject_assets() {
             wp_enqueue_script("jquery-waypoints", get_theme_file_uri("/assets/js/jquery.waypoints.min.js"), array("jquery"), VERSION, true );
             wp_enqueue_script("jquery-simplyCountdown", get_theme_file_uri("/assets/js/simplyCountdown.js"), array("jquery"), VERSION, true );
             wp_enqueue_script("launcher-main", get_theme_file_uri("/assets/js/template-main.js"), array("jquery"), VERSION, true );
+
+            $wpproject_year = get_post_meta( get_the_ID(), "year", true );
+            $wpproject_month = get_post_meta( get_the_ID(), "month", true );
+            $wpproject_day = get_post_meta( get_the_ID(), "day", true );
+
+            wp_localize_script( "launcher-main", "datedata", array(
+                "year" => $wpproject_year,
+                "month" => $wpproject_month,
+                "day" => $wpproject_day,
+            ) );
             
         }else{
             wp_enqueue_style( "google-fonts", "//fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Lobster&display=swap");
