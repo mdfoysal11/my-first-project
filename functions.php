@@ -71,3 +71,15 @@ function wpproject_excerpt_more( $more ) {
     return '<a class="read-more" href="'.get_the_permalink().'" rel="nofollow"> More</a>';
 }
 add_filter( 'excerpt_more', 'wpproject_excerpt_more' );
+function wpproject_temp_widget(){
+        register_sidebar( array(
+            'name'          => __( 'Template Left', 'wpproject' ),
+            'id'            => 'template-left',
+            'description'   => __( 'Widgets in this area will be shown on all posts and pages.', 'wpproject' ),
+            'before_widget' => '<div id="%1s" class="widget %2s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h2 class="widgettitle">',
+            'after_title'   => '</h2>',
+        ) );
+}
+add_action( "widgets_init", "wpproject_temp_widget");

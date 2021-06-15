@@ -48,11 +48,11 @@
         <div class="row">
             <div class="col-md-6">
                 <ul id="fh5co-social">
-                    <li><a href="#"><i class="icon-facebook"></i></a></li>
-                    <li><a href="#"><i class="icon-twitter"></i></a></li>
-                    <li><a href="#"><i class="icon-instagram"></i></a></li>
-                    <li><a href="#"><i class="icon-google-plus"></i></a></li>
-                    <li><a href="#"><i class="icon-pinterest-square"></i></a></li>
+                    <?php 
+                        if(is_active_sidebar( "template-left" )){
+                            dynamic_sidebar( "template-left" );
+                        }
+                    ?>
                 </ul>
             </div>
             <div class="col-md-6 fh5co-copyright">
