@@ -56,7 +56,11 @@
                 </ul>
             </div>
             <div class="col-md-6 fh5co-copyright">
-                <p>Designed by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> Demo Images: <a href="http://unsplash.com" target="_blank">Unsplash</a></p>
+            <?php 
+                if(is_active_sidebar( "template-right" )){
+                    dynamic_sidebar( "template-right" );
+                }
+            ?>
             </div>
         </div>
     </div>
