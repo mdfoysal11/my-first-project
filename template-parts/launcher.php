@@ -31,9 +31,9 @@
                         <div class="col-lg-7 animate-box">
                             <form action="#" id="fh5co-subscribe">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="<?php echo $placeholder_text; ?>">
-                                    <input type="submit" value="<?php echo $btn_text ?>" class="btn btn-success">
-                                    <p class="tip"><?php echo $hint_text ?></p>
+                                    <input type="text" class="form-control" placeholder="<?php echo esc_attr( $placeholder_text ); ?>">
+                                    <input type="submit" value="<?php echo esc_attr( $btn_text ); ?>" class="btn btn-success">
+                                    <p class="tip"><?php echo esc_attr( $hint_text ); ?></p>
                                 </div>
                             </form>
                         </div>
