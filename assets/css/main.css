@@ -238,6 +238,20 @@ span.page-numbers.current {
     width: 100%;
 }
 
+/* author section css  */
+.authorsection{
+    border: 1px solid #c1c1c1;
+    padding: 10px;
+    border-radius: 5px;
+}
+.authorsection .authorimg img{
+    border-radius: 50px;
+    vertical-align: middle;
+    float: left;
+    margin-top: 5px;
+}
+
+
 
 /* footer part */
 

@@ -22,6 +22,15 @@
                     <?php the_content();?>
                 </div>
             </div>
+            <div class="row my-5 authorsection">
+        <div class="col-md-2 authorimg">
+            <?php echo get_avatar( get_the_author_meta( "id")); ?>
+        </div>
+        <div class="col-md-10">
+            <h4><?php echo get_the_author_meta( "display_name"); ?></h4>
+            <p><?php echo get_the_author_meta( "description"); ?></p>
+        </div>
+    </div>
         </div>
         <div class="col-md-4 main-sidebar">
             <?php 
@@ -33,6 +42,7 @@
         <?php endwhile;?>
         <?php wp_reset_postdata();?>
         <?php else : get_template_part( "theme-parts/common/no-post-msg"); endif;?>
+
         </div>
     </div>
 </div>
