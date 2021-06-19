@@ -28,6 +28,16 @@
         <?php wp_reset_postdata();?>
         <?php else : get_template_part( "theme-parts/common/no-post-msg"); endif;?>
         </div>
+        <!-- dynaminc post pagination -->
+        <div class="row">
+            <div class="col-md-12">
+                <?php the_posts_pagination(array(
+                    "screen_reader_text" => " ",
+                    "prev_text" => "New Posts",
+                    "next_text" => "Old Posts"
+                )); ?>
+            </div>
+        </div>
     </div>
 </div>
 <?php get_template_part( "/theme-parts/common/theme-footer"); ?>

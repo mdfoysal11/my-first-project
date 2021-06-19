@@ -167,6 +167,29 @@ a.read-more:hover {
     color: #2c3e50;
 }
 
+/* post pagination  */
+.pagination{
+    display: block;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.pagination a, span.page-numbers.current {
+    background: #2c3e50;
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 5px 15px;
+    transition: 0.3s;
+} 
+span.page-numbers.current {
+    background: #222;
+}
+.pagination a:hover{
+    background: #222;
+} 
+
 
 /* footer part */
 
