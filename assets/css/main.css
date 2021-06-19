@@ -197,6 +197,47 @@ span.page-numbers.current {
     background: #222;
 } 
 
+/* main sidebar style  */
+
+.main-sidebar {
+    margin: 0;
+    padding: 5px 10px;
+    border: 1px solid #c1c1c1;
+}
+
+.main-sidebar .widget {
+    border-bottom: 1px solid #c1c1c1;
+    padding: 15px 0px;
+}
+
+.main-sidebar .widget:last-child {
+    border: 0;
+    margin: 0;
+}
+
+.main-sidebar .widget h4 {
+    font-size: 24px;
+}
+
+.main-sidebar .widget ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.main-sidebar .widget ul li {
+    padding: 3px 0;
+}
+
+.main-sidebar .widget a {
+    color: #2c3e50;
+    font-size: 16px !important;
+}
+
+.main-sidebar .widget table {
+    width: 100%;
+}
+
 
 /* footer part */
 
