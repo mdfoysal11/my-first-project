@@ -75,22 +75,40 @@ function wpproject_excerpt_more( $more ) {
 add_filter( 'excerpt_more', 'wpproject_excerpt_more' );
 function wpproject_temp_widget(){
         register_sidebar( array(
-            'name'          => __( 'Template Left', 'wpproject' ),
-            'id'            => 'template-left',
+            'name'          => __( 'Footer One', 'wpproject' ),
+            'id'            => 'footer-1',
             'description'   => __( 'Widgets in this area will be shown on all posts and pages.', 'wpproject' ),
             'before_widget' => '<div id="%1s" class="widget %2s">',
             'after_widget'  => '</div>',
-            'before_title'  => '<h2 class="widgettitle">',
-            'after_title'   => '</h2>',
-        ) );
+            'before_title'  => '<h4 class="widgettitle">',
+            'after_title'   => '</h4>',
+        ) );        
         register_sidebar( array(
-            'name'          => __( 'Template Right', 'wpproject' ),
-            'id'            => 'template-right',
+            'name'          => __( 'Footer Two', 'wpproject' ),
+            'id'            => 'footer-2',
             'description'   => __( 'Widgets in this area will be shown on all posts and pages.', 'wpproject' ),
             'before_widget' => '<div id="%1s" class="widget %2s">',
             'after_widget'  => '</div>',
-            'before_title'  => '<h2 class="widgettitle">',
-            'after_title'   => '</h2>',
+            'before_title'  => '<h4 class="widgettitle">',
+            'after_title'   => '</h4>',
+        ) );        
+        register_sidebar( array(
+            'name'          => __( 'Footer Three', 'wpproject' ),
+            'id'            => 'footer-3',
+            'description'   => __( 'Widgets in this area will be shown on all posts and pages.', 'wpproject' ),
+            'before_widget' => '<div id="%1s" class="widget %2s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h4 class="widgettitle">',
+            'after_title'   => '</h4>',
+        ) );        
+        register_sidebar( array(
+            'name'          => __( 'Footer Four', 'wpproject' ),
+            'id'            => 'footer-4',
+            'description'   => __( 'Widgets in this area will be shown on all posts and pages.', 'wpproject' ),
+            'before_widget' => '<div id="%1s" class="widget %2s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h4 class="widgettitle">',
+            'after_title'   => '</h4>',
         ) );
 }
 add_action( "widgets_init", "wpproject_temp_widget");

@@ -48,19 +48,13 @@
         <div class="row">
             <div class="col-md-6">
                 <ul id="fh5co-social">
-                    <?php 
-                        if(is_active_sidebar( "template-left" )){
-                            dynamic_sidebar( "template-left" );
-                        }
-                    ?>
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
                 </ul>
             </div>
             <div class="col-md-6 fh5co-copyright">
-            <?php 
-                if(is_active_sidebar( "template-right" )){
-                    dynamic_sidebar( "template-right" );
-                }
-            ?>
+            <p>&copy; All Right Revarsed.</p>
             </div>
         </div>
     </div>
