@@ -22,7 +22,14 @@
                     <?php the_content();?>
                 </div>
             </div>
-        </div> 
+        </div>
+        <div class="col-md-4">
+            <?php 
+                if(is_active_sidebar( "sidebar-1" )){
+                    dynamic_sidebar( "sidebar-1" );
+                }
+            ?>
+        </div>
         <?php endwhile;?>
         <?php wp_reset_postdata();?>
         <?php else : get_template_part( "theme-parts/common/no-post-msg"); endif;?>
