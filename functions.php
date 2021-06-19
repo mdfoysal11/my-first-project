@@ -10,6 +10,7 @@ function wpproject_bootstraping()
 	load_theme_textdomain("wpproject");
 	add_theme_support( "title-tag");
     add_theme_support( 'post-thumbnails' );
+    add_theme_support( "post-formats", array("aside","gallery","link","image","quote","status","video","audio","chat") );
     register_nav_menu( "topmenu", __("Top Menu", "wpproject") );
     register_nav_menu( "footermenu", __("Footer Menu", "wpproject") );
 }
@@ -48,6 +49,7 @@ function wpproject_assets() {
             wp_enqueue_style( "fontawesome", "//use.fontawesome.com/releases/v5.15.3/css/all.css");
             wp_enqueue_style( "bootstrap", get_theme_file_uri( "/assets/css/bootstrap.min.css" ), null,VERSION);
             wp_enqueue_style( "slicknav-css", get_theme_file_uri( "/assets/css/slicknav.min.css" ), null, VERSION);
+            wp_enqueue_style( "dashicons");
             wp_enqueue_style( "main-css", get_theme_file_uri( "/assets/css/main.css" ), null, VERSION);
             wp_enqueue_style( "style-css", get_stylesheet_uri() );
         

@@ -16,7 +16,31 @@
                         <?php endif;?>
                 </div>
                 <div class="post-content">
-                    <h4 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+                    <h4 class="post-title">
+                    <?php 
+                        $post_format = get_post_format();
+                        if($post_format == "aside"){
+                            echo '<span class="dashicons dashicons-format-aside"></span>';
+                        }else if($post_format == "gallery"){
+                            echo '<span class="dashicons dashicons-format-gallery"></span>';
+                        }else if($post_format == "link"){
+                            echo '<span class="dashicons dashicons-format-links"></span>';
+                        }else if($post_format == "image"){
+                            echo '<span class="dashicons dashicons-format-image"></span>';
+                        }else if($post_format == "quote"){
+                            echo '<span class="dashicons dashicons-format-quote"></span>';
+                        }else if($post_format == "status"){
+                            echo '<span class="dashicons dashicons-format-status"></span>';
+                        }else if($post_format == "video"){
+                            echo '<span class="dashicons dashicons-format-video"></span>';
+                        }else if($post_format == "audio"){
+                            echo '<span class="dashicons dashicons-format-audio"></span>';
+                        }else if($post_format == "chat"){
+                            echo '<span class="dashicons dashicons-format-chat"></span>';
+                        }
+                    ?>
+                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                    </h4>
                     <div class="post-meta">
                         <p>Author: <?php echo get_the_author(); ?> | Post At: <?php echo get_the_date("jS M, Y"); ?></p>
                     </div>
