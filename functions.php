@@ -18,7 +18,7 @@ add_action( "after_setup_theme", "wpproject_bootstraping");
 
 function wpproject_assets() {
     
-    if(is_page() || is_front_page() || is_single( )){
+    if(is_page() || is_front_page() || is_single( ) || is_author()){
         $template_name = basename(get_page_template());
         if($template_name == "launcher.php"){
             wp_enqueue_style( "launcher-google-fonts", "//fonts.googleapis.com/css?family=Open+Sans:400,700,800");
@@ -121,3 +121,10 @@ function wpproject_temp_widget(){
         ) );
 }
 add_action( "widgets_init", "wpproject_temp_widget");
+
+function wpproject_body_class($classes){
+    unset($classes[array_search("blog", $classes)]);
+    $classes[] = "new_classes";
+    return $classes;
+}
+add_filter( "body_class", "wpproject_body_class");
