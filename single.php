@@ -1,3 +1,9 @@
+<?php 
+$wpproject_layout_class ="col-md-8";
+if(!is_active_sidebar( "sidebar-1" )){
+    $wpproject_layout_class ="col-md-12";
+}
+?>
 <?php get_header();?>
 <?php get_template_part( "theme-parts/common/navigation"); ?>
 
@@ -5,7 +11,7 @@
 <div class="container">
 <div class="row">
 <?php if(have_posts()) : while(have_posts()) : the_post();?>
-        <div class="col-md-8 mb-5">
+        <div class="<?php echo $wpproject_layout_class; ?> mb-5">
             <div class="single-post">
                 <div class="post-img">
                     <?php if(has_post_thumbnail()) : ?>
@@ -32,12 +38,14 @@
         </div>
     </div>
         </div>
+        <?php if(is_active_sidebar( "sidebar-1" )): ?>
         <div class="col-md-4 main-sidebar">
             <?php 
                 if(is_active_sidebar( "sidebar-1" )){
                     dynamic_sidebar( "sidebar-1" );
                 }
             ?>
+            <?php endif; ?>
         </div>
         <?php endwhile;?>
         <?php wp_reset_postdata();?>
