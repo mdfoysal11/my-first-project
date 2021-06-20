@@ -203,6 +203,7 @@ span.page-numbers.current {
     margin: 0;
     padding: 5px 10px;
     border: 1px solid #c1c1c1;
+    border-radius: 5px;
 }
 
 .main-sidebar .widget {
@@ -243,6 +244,7 @@ span.page-numbers.current {
     border: 1px solid #c1c1c1;
     padding: 10px;
     border-radius: 5px;
+    margin: 0px 3px 0px 0px;
 }
 .authorsection .authorimg img{
     border-radius: 50px;
