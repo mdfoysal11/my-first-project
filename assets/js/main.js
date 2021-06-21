@@ -4,12 +4,13 @@
 
 		var slider = tns({
 			container: '.slider',
-			speed: 300,
+			speed:300,
+			nav:false,
 			autoplayTimeout:3000,
 			items: 1,
-			autoplay: true,
-			autoHeight: true,
-			controls: false,
+			autoplay:true,
+			autoHeight:true,
+			controls:false,
 			autoplayButtonOutput:false
 		});
 	});

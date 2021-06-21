@@ -12,6 +12,7 @@ if(!is_active_sidebar( "sidebar-1" )){
 <div class="row">
 <?php if(have_posts()) : while(have_posts()) : the_post();?>
         <div class="<?php echo $wpproject_layout_class; ?> mb-5">
+        <?php if(class_exists("Attachments")) : ?>
             <div class="slider">
                 <?php $attachments = new Attachments( 'slider' ); ?>
                 <?php if( $attachments->exist() ) : ?>
@@ -20,8 +21,10 @@ if(!is_active_sidebar( "sidebar-1" )){
                     <?php endwhile; ?>
                 <?php endif; ?>
             </div>
+            <?php endif; ?>
         </div>
             <div class="single-post">
+            <?php if(!class_exists("Attachments")): ?>
                 <div class="post-img">
                     <?php if(has_post_thumbnail()) : ?>
                             <?php the_post_thumbnail( "large", array("class" => "img-fluid")); ?>
@@ -29,6 +32,7 @@ if(!is_active_sidebar( "sidebar-1" )){
                             <img class="img-fluid" src="<?php echo get_template_directory_uri();?>/assets/images/wpproject_no_image.jpg" alt="">
                         <?php endif;?>
                 </div>
+                <?php endif; ?>
                 <div class="post-content">
                     <h4 class="post-title mt-3"><?php the_title(); ?></h4>
                     <div class="post-meta">
