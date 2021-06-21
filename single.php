@@ -12,6 +12,15 @@ if(!is_active_sidebar( "sidebar-1" )){
 <div class="row">
 <?php if(have_posts()) : while(have_posts()) : the_post();?>
         <div class="<?php echo $wpproject_layout_class; ?> mb-5">
+            <div class="slider">
+                <?php $attachments = new Attachments( 'slider' ); ?>
+                <?php if( $attachments->exist() ) : ?>
+                    <?php while( $attachments->get() ) : ?>
+                        <?php echo $attachments->image( 'large'); ?>
+                    <?php endwhile; ?>
+                <?php endif; ?>
+            </div>
+        </div>
             <div class="single-post">
                 <div class="post-img">
                     <?php if(has_post_thumbnail()) : ?>

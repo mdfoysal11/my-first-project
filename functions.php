@@ -1,5 +1,8 @@
 <?php
-if(site_url() == "http://demo.lwhh.com"){
+if(class_exists("Attachments")){
+    require_once "lib/attachments.php";
+}
+if(site_url() == "http://demo.themedev.com"){
     define("VERSION", time());
 }else{
     define("VERSION", wp_get_theme() -> get("Version"));
@@ -45,6 +48,8 @@ function wpproject_assets() {
             ) );
             
         }else{
+
+            wp_enqueue_style( "tns-css", "//cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css");
             wp_enqueue_style( "google-fonts", "//fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Lobster&display=swap");
             wp_enqueue_style( "fontawesome", "//use.fontawesome.com/releases/v5.15.3/css/all.css");
             wp_enqueue_style( "bootstrap", get_theme_file_uri( "/assets/css/bootstrap.min.css" ), null,VERSION);
@@ -53,6 +58,7 @@ function wpproject_assets() {
             wp_enqueue_style( "main-css", get_theme_file_uri( "/assets/css/main.css" ), null, VERSION);
             wp_enqueue_style( "style-css", get_stylesheet_uri() );
         
+            wp_enqueue_script("tns-js", "//cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/min/tiny-slider.helper.ie8.js",array("jquery"), VERSION, true );
             wp_enqueue_script("slicknav-js", get_theme_file_uri("/assets/js/jquery.slicknav.min.js"), array("jquery"), VERSION, true );
             wp_enqueue_script("main-js", get_theme_file_uri("/assets/js/main.js"), array("jquery"), VERSION, true );
         }
